@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Software Consultancy Website"
+version = "1.0.0"
+id = "artifacts/consultancy-web"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24826
+
+[services.development]
+run = "pnpm --filter @workspace/consultancy-web run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/consultancy-web", "run", "build" ]
+publicDir = "artifacts/consultancy-web/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24826"
+BASE_PATH = "/"
