@@ -18,7 +18,6 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -37,10 +36,10 @@ jobs:
         with:
           version: 8
 
-      - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+      - name: Install website dependencies only
+        run: pnpm install --filter . --no-frozen-lockfile
 
-      - name: Build
+      - name: Build website
         run: pnpm run build
         env:
           BASE_PATH: "/"
