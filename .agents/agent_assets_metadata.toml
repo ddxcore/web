@@ -1,0 +1,44 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "9r70Ybbtx_8IHPWt80NdQ"
+uri = "file://artifacts/consultancy-web/src/assets/portfolio-saas.png"
+type = "image"
+title = "B2B SaaS dashboard interface"
+
+[[generated]]
+id = "MKs9EI9FWyGGBkheZqo2C"
+uri = "file://artifacts/consultancy-web/src/assets/portfolio-fintech.png"
+type = "image"
+title = "FinTech trading platform interface"
+
+[[generated]]
+id = "Z0-QXT_O4GoX-RDEdaS2b"
+uri = "file://artifacts/consultancy-web/src/assets/portfolio-logistics.png"
+type = "image"
+title = "Logistics app map routing interface"
+
+[[generated]]
+id = "1P7SPP5_zZpNpF8YkzbrD"
+uri = "file://artifacts/consultancy-web/src/assets/portfolio-healthcare.png"
+type = "image"
+title = "Healthcare dashboard patient data"
+
+[[generated]]
+id = "TXCf-9nZtiOEY5eh2EeaE"
+uri = "file://artifacts/consultancy-web/src/assets/team-1.png"
+type = "image"
+title = "Professional engineer headshot"
+
+[[generated]]
+id = "PEff3GWh_k5EAWRs3tuAT"
+uri = "file://artifacts/consultancy-web/src/assets/team-2.png"
+type = "image"
+title = "Professional engineer headshot"
+
+[[generated]]
+id = "nwd4NyGO92J6P61usxx7p"
+uri = "file://artifacts/consultancy-web/src/assets/team-3.png"
+type = "image"
+title = "Professional engineer headshot"
