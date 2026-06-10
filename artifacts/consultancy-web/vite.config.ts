@@ -27,7 +27,8 @@ if (!basePath) {
 }
 
 export default defineConfig({
-  base: basePath,
+  //base: basePath,
+  base: '/Digital-Solutions-Hub/',
   plugins: [
     react(),
     tailwindcss(),
