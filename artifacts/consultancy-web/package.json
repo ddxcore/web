@@ -7,7 +7,9 @@
     "dev": "vite --config vite.config.ts --host 0.0.0.0",
     "build": "vite build --config vite.config.ts",
     "serve": "vite preview --config vite.config.ts --host 0.0.0.0",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@esbuild/win32-x64": "^0.27.3",
